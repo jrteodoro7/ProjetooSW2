@@ -12,14 +12,14 @@
 <body>
 
 
-<div class="container-fluid bg-primary text-white text-center p-5">
+<div class="container-fluid bg-dark text-white text-center p-5">
     <h1>Projeto SW2</h1>
 <p>
         Elaborado por José Ricardo Teodoro
 </p>
 </div>
 
-<div class="container">
+<div class="container mt-5">
         <div calss="row">
 
     <div class="col-sm-4">
@@ -32,7 +32,16 @@
 
     <div class="col-sm-4">
     <h1>Fornecedor</h1>
+    <p class="bg-sucess">
+        Utilize esta opção para cadastrar os fornecedores
+        dos produtos que serão vendidos on-line. </p>
 </div>
+<div class="col-sm-6">
+    <h1 class="bg-secondary">produtos</h1>
+    <p class="text-warning">
+        Utilize esta opção para visualizar as Vendas
+        realizadas pelos clientes.
+</p>
         </div>
 </div>
 
