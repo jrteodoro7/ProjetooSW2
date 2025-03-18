@@ -8,29 +8,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="bg-success text-white p-3 text-center">
+    <div class="bg-primary text-white p-3 text-center">
         <h1>Cadastro de Administradores</h1>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 mx-auto mt-3 border border-success">
+            <div class="col-sm-8 mx-auto mt-3 border border-primary">
 
-                <h3 class="text-center p-3">Preencha os dados abaixo</h3>
+                <h3 class="text-center p-3">Confirmação do Cadastro</h3>
+            <div>
+                <?php
+                $nome = $_REQUEST["nome"];
+                $login = $_REQUEST["login"];
+                $senha = $_REQUEST["senha"];
 
-                <from action="#">
+echo "nome do administrador: $nome <br>
+    login: $login <br>
+    senha: $senha <br>";
 
-                    <p>
-                        Fornecedor<br>
-                        <input type="text" name="fornecedor" class="form-control" >
-                    </p>
-                    <p>
-                        <input type="submit" value="Cadastrar">
-                        <input type="reset" value="Limpar">
-                        <a href="index.php"class="btn btn-success">Voltar</a>
-                    </p>
-                </from>
+        $sql = "insert into administrador(nome, login, senha)
+                values (:nome, :login, :senha)";
 
+        include "conexao.php";
+        $result = $conexao->prepare($sql);
+
+        ?>
             </div>
         </div>
     </div>

@@ -18,7 +18,7 @@
 
                 <h3 class="text-center p-3">Preencha os dados abaixo</h3>
 
-                <from action="#">
+                <from action="administrador_cadastro.php">
 
                     <p>
                         Digite o nome do administrador<br>
