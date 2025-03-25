@@ -21,7 +21,7 @@
                 <?php
                 $nome = $_REQUEST["nome"];
                 $login = $_REQUEST["login"];
-                $senha = $_REQUEST["senha"];
+                $senha = md5( $_REQUEST["senha"]);
 
 echo "nome do administrador: $nome <br>
     login: $login <br>
@@ -32,7 +32,11 @@ echo "nome do administrador: $nome <br>
 
         include "conexao.php";
         $result = $conexao->prepare($sql);
-
+        $result ->bindValue(":nome", $nome);
+        $result ->bindValue(":login", $login);
+        $result ->bindValue(":senha", $senha);
+        $result ->execute();
+        echo "<p> O administador foi cadastrado com sucesso!</p>";
         ?>
             </div>
         </div>
