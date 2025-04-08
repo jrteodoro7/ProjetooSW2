@@ -18,15 +18,18 @@
 
                 <h3 class="text-center p-3">Preencha os dados abaixo</h3>
 
-                <from action="#">
+                <form action="produto_cadastro.php">
 
                     <p>
-                        Descrição<br>
-                        <input type="text" name="categoria" class="form-control" >
+                        Nome do produto<br>
+                        <input type="text" name="descricao" class="form-control" >
                     </p>
                     <p>
+                        Preço de custo<br>
+                        <input type="text" name="precocusto" class="form-control">
+                    <p>
                         Preço de venda<br>
-                        <input type="text" name="preco" class="form-control" >
+                        <input type="text" name="precovenda" class="form-control" >
                     </p>
                     <p>
                         Categoria<br>
@@ -41,7 +44,7 @@
                         <input type="reset" value="Limpar">
                         <a href="index.php"class="btn btn-warning">Voltar</a>
                     </p>
-                </from>
+                </form>
 
             </div>
         </div>
