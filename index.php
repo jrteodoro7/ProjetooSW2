@@ -76,6 +76,16 @@
                     realizadas pelos clientes.
                 </p>
             </div>
+            <div class="col-sm-4"> 
+                <h1 class="bg-danger">Formas de Pagamento</h1>
+                <p class="text-danger">
+                    Utilize esta opção para realizar o cadastro
+                    de formas de pagamento, ou edita-los.
+                </p>
+                <p>
+                <a href="formaspagamento.php" class="btn btn-danger">Clique aqui</a>
+                </p>
+            </div>
         </div>
 
     </div>

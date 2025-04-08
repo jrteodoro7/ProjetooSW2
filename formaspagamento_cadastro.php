@@ -9,28 +9,30 @@
 </head>
 <body>
     <div class="bg-primary text-white p-3 text-center">
-        <h1>Cadastro de Administradores</h1>
+        <h1>Cadastro de Formas de pagamento</h1>
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-sm-8 mx-auto mt-3 border border-primary">
 
-                <h3 class="text-center p-3">Preencha os dados abaixo</h3>
+                <h3 class="text-center p-3">Confirmação do Cadastro</h3>
+            <div>
+                <?php
+                include "conexao.php";
+                
+                $nome = $_REQUEST["nome"];
+               
 
-                <form action="formaspagamento_cadastro.php">
+echo "nome da forma de pagamento: $nome <br>";
 
-                    <p>
-                        Digite o nome da forma de pagamento<br>
-                        <input type="text" name="nome" class="form-control" >
-                    </p>
-                    <p>
-                        <input type="submit" value="Cadastrar">
-                        <input type="reset" value="Limpar">
-                        <a href="index.php"class="btn btn-primary">Voltar</a>
-                    </p>
-                </form>
-
+        $sql = "insert into formapagamento(nome)
+                values (:nome)";
+        $result = $conexao->prepare($sql);
+        $result ->bindValue(":nome", $nome);
+        $result ->execute();
+        echo "<p> A forma de pagamento foi cadastrada com sucesso!</p>";
+        ?>
             </div>
         </div>
     </div>
