@@ -29,7 +29,8 @@
                     de novos administradores, ou edita-los.
                 </p>
                 <p>
-                <a href="administrador.php" class="btn btn-primary">Clique aqui</a>
+                <a href="administrador.php" class="btn btn-primary">Cadastro</a>
+                <a href="administrador_pesquisa.php" class="btn btn-primary">Pesquisa</a>
                 </p>
             </div>
 
