@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 08-Abr-2025 às 10:59
+-- Tempo de geração: 27-Maio-2025 às 11:47
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -36,14 +36,15 @@ CREATE TABLE IF NOT EXISTS `administrador` (
   `login` varchar(200) NOT NULL,
   `senha` varchar(200) NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `administrador`
 --
 
 INSERT INTO `administrador` (`codigo`, `nome`, `login`, `senha`) VALUES
-(1, 'ze', 'tete', '2db313fabca57504d9dc776e46b304f6');
+(1, 'ze', 'tete', 'e10adc3949ba59abbe56e057f20f883e'),
+(2, 'jose', 'jose', '662eaa47199461d01a623884080934ab');
 
 -- --------------------------------------------------------
 
