@@ -25,7 +25,7 @@
     
     <?php include "menu.php" ?>
 
-    <div class="container-fluid bg-primary text-white text-center p-5">
+    <div class="container-fluid bg-black text-white text-center p-5">
         <h1>Projeto SW2</h1>
         <p>
             Elaborado por José Ricardo Teodoro
@@ -54,7 +54,8 @@
                     dos produtos que serão vendidos on-line.
                 </p>
                 <p>
-                <a href="categoria.php" class="btn btn-danger">Clique aqui</a>   
+                <a href="categoria.php" class="btn btn-danger">Clique aqui</a> 
+                <a href="categoria_pesquisa.php" class="btn btn-danger">Pesquisa</a>  
                 </p>
             </div>
 
@@ -66,6 +67,7 @@
                 </p>
                 <p>
                 <a href="fornecedor.php" class="btn btn-sucess">Clique aqui</a>
+                <a href="fornecedor_pesquisa.php" class="btn btn-sucess">Pesquisa</a>
                 </p>
             </div>
         </div>
@@ -79,7 +81,8 @@
                     que serão vendidos no site.
                 </p>
                 <p>
-                <a href="produto.php" class="btn btn-warning">Clique aqui</a>
+                <a href="produtos.php" class="btn btn-warning">Clique aqui</a>
+                <a href="produto_pesquisa.php" class="btn btn-warning">Pesquisa</a>
                 </p>
             </div>
 
@@ -98,6 +101,7 @@
                 </p>
                 <p>
                 <a href="formaspagamento.php" class="btn btn-danger">Clique aqui</a>
+                <a href="formapagamento_pesquisa.php" class="btn btn-danger">Pesquisa</a>
                 </p>
             </div>
         </div>
